@@ -67,10 +67,11 @@
   }
   
   .hero h1 {
-    color: #111827;
-    font-size: 48px;
-    margin-bottom: 15px;
-  }
+  color: #111827;
+  font-size: 42px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
   
   .hero p {
     font-size: 19px;
@@ -218,9 +219,10 @@
       text-align: center;
     }
   
-    .hero h1 {
-      font-size: 34px;
-    }
+      .hero h1 {
+    font-size: 28px;
+    white-space: normal;
+  }
   
     .hero-buttons {
       justify-content: center;
