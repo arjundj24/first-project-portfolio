@@ -1,136 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Dev J | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-  <header>
-    <h2>My Portfolio</h2>
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <a href="#home" class="logo">Arjun<span>.</span></a>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <p class="small-text">Welcome to my portfolio</p>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Hi! I’m Arjun Dev J</p>
+          <h1>
+            Student and <br />
+            <span class="type-text" id="typeText">Full-Stack Developer</span>
+          </h1>
+          <p class="hero-description">
+            I build practical digital solutions using web development, backend systems,
+            databases, and clean user interfaces. I enjoy creating useful projects that solve
+            real student and college problems.
+          </p>
 
-      <h1>Hello, I am Arjun Dev J</h1>
+          <div class="hero-actions">
+            <a href="#work" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
 
-      <p>
-        I am a Computer Science and Engineering student interested in web development,
-        backend development, databases, and problem solving. I have built projects using
-        HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB, and I am continuously
-        improving my full-stack development skills.
-      </p>
+          <div class="hero-stats">
+            <div>
+              <strong>03+</strong>
+              <span>Projects</span>
+            </div>
+            <div>
+              <strong>Full</strong>
+              <span>Stack</span>
+            </div>
+            <div>
+              <strong>CSE</strong>
+              <span>Student</span>
+            </div>
+          </div>
+        </div>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary-btn">View My Projects</a>
-        <button onclick="showMessage()" class="btn secondary-btn">Say Hello</button>
-      </div>
-    </div>
+        <div class="hero-visual reveal">
+          <div class="profile-orbit">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="profile-card">
+              <img src="images/profile.png" alt="Arjun Dev J profile photo" class="profile-photo" />
+              <div>
+                <h3>Future Software Engineer</h3>
+                <p>Learning • Building • Improving</p>
+              </div>
+            </div>
+          </div>
 
-    <div class="hero-image">
-      <img src="images/profile.png" alt="My Profile Photo" class="profile-photo">
-      <h3>Full-Stack Developer in Progress</h3>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-
-    <p>
-      I am a Computer Science and Engineering student. I am currently learning
-      web development, backend development, databases, and problem solving.
-      I enjoy building useful projects and improving my programming skills step by step.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>My Skills</h2>
-
-    <div class="skills-box">
-      <p>HTML</p>
-      <p>Basic CSS</p>
-      <p>Basic JavaScript</p>
-      <p>C Programming</p>
-      <p>Problem Solving</p>
-      <p>Node.js</p>
-      <p>Express.js</p>
-      <p>MongoDB</p>
-      <p>JWT Authentication</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-          This is my first project created using HTML, CSS, and JavaScript.
-        </p>
-        <span>HTML • CSS • JavaScript</span>
-      </div>
-
-      <div class="project-card">
-        <h3>StudyMate - Full-Stack Student Study Planner</h3>
-
-        <p>
-          A full-stack student study planner where users can sign up, log in, and manage
-          their study tasks. It includes task categories, calendar view, reminders, dark mode,
-          search, filtering, sorting, and MongoDB database storage.
-        </p>
-
-        <span>HTML • CSS • JavaScript • Node.js • Express.js • MongoDB</span>
-
-        <div class="project-links">
-          <a href="https://arjundj24.github.io/studymate-task-planner/" target="_blank">
-            Live Demo
-          </a>
-
-          <a href="https://github.com/arjundj24/studymate-task-planner" target="_blank">
-            GitHub
+          <a href="#about" class="explore-wheel" aria-label="Explore more">
+            <span>EXPLORE • MORE •</span>
+            <strong>↓</strong>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
+    <section id="about" class="section about-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>A CSE student building real-world web applications.</h2>
+      </div>
 
-    <div class="contact-box">
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:24b821@nssce.ac.in">24b821@nssce.ac.in</a>
-      </p>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>
+            I am a Computer Science and Engineering student interested in web development,
+            backend development, databases, and problem solving. I have built full-stack
+            projects using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB.
+          </p>
+          <p>
+            My goal is to keep improving by building useful projects step by step and learning
+            how real-world software systems are designed and deployed.
+          </p>
+        </div>
 
-      <p>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/arjundj24" target="_blank">github.com/arjundj24</a>
-      </p>
+        <div class="about-highlights reveal">
+          <div class="highlight-card">
+            <span>🎯</span>
+            <h3>Focus</h3>
+            <p>Full-stack development and practical student-focused systems.</p>
+          </div>
+          <div class="highlight-card">
+            <span>🚀</span>
+            <h3>Currently</h3>
+            <p>Building projects, improving UI/UX, backend APIs, and MongoDB workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <p>
-        <strong>LinkedIn:</strong> Arjun Dev J
-      </p>
-    </div>
-  </section>
+    <section id="work" class="section work-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">View My Work</p>
+        <h2>Projects I’ve built so far.</h2>
+      </div>
 
-  <footer>
-    <p>© 2026 Arjun Dev J. All rights reserved.</p>
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+
+      <div class="projects-list">
+        <article class="project-showcase reveal" data-category="fullstack">
+          <div class="project-index">01</div>
+          <div class="project-preview campus-preview">
+            <span>Campus Connect</span>
+          </div>
+          <div class="project-info">
+            <p class="project-type">Full-Stack Platform</p>
+            <h3>Campus Connect - College Club Event Management</h3>
+            <p>
+              A full-stack college club event management platform with role-based dashboards,
+              event approval and publishing workflow, student registrations, club memberships,
+              notifications, event task assignments, participant reports, and MongoDB storage.
+            </p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://arjundj24.github.io/campus-connect/" target="_blank">Live Demo</a>
+              <a href="https://github.com/arjundj24/campus-connect" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-showcase reveal" data-category="fullstack">
+          <div class="project-index">02</div>
+          <div class="project-preview studymate-preview">
+            <span>StudyMate</span>
+          </div>
+          <div class="project-info">
+            <p class="project-type">Full-Stack Productivity App</p>
+            <h3>StudyMate - Student Study Planner</h3>
+            <p>
+              A student study planner with authentication, MongoDB task storage, task categories,
+              calendar view, reminders, dark mode, search, filtering, sorting, and user-specific tasks.
+            </p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://arjundj24.github.io/studymate-task-planner/" target="_blank">Live Demo</a>
+              <a href="https://github.com/arjundj24/studymate-task-planner" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-showcase reveal" data-category="frontend">
+          <div class="project-index">03</div>
+          <div class="project-preview portfolio-preview">
+            <span>Portfolio</span>
+          </div>
+          <div class="project-info">
+            <p class="project-type">Frontend Project</p>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              My first web development project, created to showcase my skills, projects, and contact details.
+            </p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">My Services</p>
+        <h2>What I can build and improve.</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span>💻</span>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, attractive, and user-friendly interfaces.</p>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive layouts</li>
+            <li>Modern UI styling</li>
+            <li>Animations and interactions</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <span>🛠️</span>
+          <h3>Backend Development</h3>
+          <p>Creating APIs, authentication, and database-connected systems.</p>
+          <ul>
+            <li>Node.js and Express.js</li>
+            <li>REST APIs</li>
+            <li>JWT authentication</li>
+            <li>MongoDB database</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <span>🎨</span>
+          <h3>UI/UX Improvement</h3>
+          <p>Improving project appearance, flow, usability, and presentation.</p>
+          <ul>
+            <li>Modern design systems</li>
+            <li>Dashboard layouts</li>
+            <li>Visual polish</li>
+            <li>Better user flow</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">My Skills</p>
+        <h2>Technologies I’m learning and using.</h2>
+      </div>
+
+      <div class="skills-tabs reveal">
+        <button class="skill-tab active" data-tab="frontend">Frontend</button>
+        <button class="skill-tab" data-tab="backend">Backend</button>
+        <button class="skill-tab" data-tab="tools">Tools</button>
+      </div>
+
+      <div class="skills-panel active" id="frontend">
+        <div class="skill-pill">HTML</div>
+        <div class="skill-pill">CSS</div>
+        <div class="skill-pill">JavaScript</div>
+        <div class="skill-pill">Responsive Design</div>
+        <div class="skill-pill">UI Animations</div>
+      </div>
+
+      <div class="skills-panel" id="backend">
+        <div class="skill-pill">Node.js</div>
+        <div class="skill-pill">Express.js</div>
+        <div class="skill-pill">MongoDB</div>
+        <div class="skill-pill">REST API</div>
+        <div class="skill-pill">JWT Authentication</div>
+      </div>
+
+      <div class="skills-panel" id="tools">
+        <div class="skill-pill">Git</div>
+        <div class="skill-pill">GitHub</div>
+        <div class="skill-pill">Render</div>
+        <div class="skill-pill">MongoDB Atlas</div>
+        <div class="skill-pill">VS Code</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact Me</p>
+        <h2>Let’s connect and build something useful.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" placeholder="your.email@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="Write your message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+
+        <div class="contact-info reveal">
+          <a href="/cdn-cgi/l/email-protection#487a7c2a707a7908263b3b2b2d66292b662126" class="contact-item">
+            <span>✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><span class="__cf_email__" data-cfemail="f1c3c593c9c3c0b19f82829294df9092df989f">[email&#160;protected]</span></p>
+            </div>
+          </a>
+          <a href="https://github.com/arjundj24" target="_blank" class="contact-item">
+            <span>🐙</span>
+            <div>
+              <strong>GitHub</strong>
+              <p>github.com/arjundj24</p>
+            </div>
+          </a>
+          <div class="contact-item">
+            <span>📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>Palakkad, Kerala</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Arjun Dev J. Built with HTML, CSS, JavaScript and continuous learning.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
 </body>
 </html>
